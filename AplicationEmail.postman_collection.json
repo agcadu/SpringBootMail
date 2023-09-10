@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "60eb30f6-32a0-4955-9d33-e3ef7f931f13",
+		"name": "AplicationEmail",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24393158",
+		"_collection_link": "https://lunar-crater-546608.postman.co/workspace/Team-Workspace~09b7adc2-4999-4880-8509-cbaed4e92cc0/collection/24393158-60eb30f6-32a0-4955-9d33-e3ef7f931f13?action=share&source=collection_link&creator=24393158"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/v1/sendMailFile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "toUser",
+							"value": "benipa@hotmail.com,rositausejo@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "subject",
+							"value": "Prueba email con archivo",
+							"type": "text"
+						},
+						{
+							"key": "message",
+							"value": "Prueba de email con texto y archivo",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/D:/QR.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/sendMailFile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"sendMailFile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/v1/sendMail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"toUser\" : [\"benipa@hotmail.com\", \"rositausejo@gmail.com\"],\r\n    \"subject\" : \"Prueba email\",\r\n    \"message\" : \"Prueba de email con texto\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/sendMail",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"sendMail"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
