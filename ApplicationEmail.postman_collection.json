@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "60eb30f6-32a0-4955-9d33-e3ef7f931f13",
-		"name": "AplicationEmail",
+		"name": "ApplicationEmail",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "24393158",
 		"_collection_link": "https://lunar-crater-546608.postman.co/workspace/Team-Workspace~09b7adc2-4999-4880-8509-cbaed4e92cc0/collection/24393158-60eb30f6-32a0-4955-9d33-e3ef7f931f13?action=share&source=collection_link&creator=24393158"
@@ -17,7 +17,7 @@
 					"formdata": [
 						{
 							"key": "toUser",
-							"value": "benipa@hotmail.com,rositausejo@gmail.com",
+							"value": "prueba1@hotmail.com,prueba2@gmail.com",
 							"type": "text"
 						},
 						{
@@ -59,7 +59,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"toUser\" : [\"benipa@hotmail.com\", \"rositausejo@gmail.com\"],\r\n    \"subject\" : \"Prueba email\",\r\n    \"message\" : \"Prueba de email con texto\"\r\n\r\n}",
+					"raw": "{\r\n    \"toUser\" : [\"prueba1@hotmail.com\", \"prueba2@gmail.com\"],\r\n    \"subject\" : \"Prueba email\",\r\n    \"message\" : \"Prueba de email con texto\"\r\n\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
