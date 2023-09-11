@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  springboot_mail:
+    container_name: springboot_mail
+    image: springboot_mail
+    build: .
+    ports:
+      - 8080:8080
+    environment:
+      - EMAIL_SENDER="introduzca su cuenta de gmail"
+      - EMAIL_PASSWORD="introduzca su contraseña de gmail"

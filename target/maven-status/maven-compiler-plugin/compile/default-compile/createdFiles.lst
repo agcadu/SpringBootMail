@@ -1,0 +1,7 @@
+com\SpringBootMail\SpringBootMailApplication.class
+com\SpringBootMail\domain\EmailFileDTO.class
+com\SpringBootMail\service\EmailServiceImpl.class
+com\SpringBootMail\controller\MailController.class
+com\SpringBootMail\domain\EmailDTO.class
+com\SpringBootMail\service\IEmailService.class
+com\SpringBootMail\config\MailConfig.class
